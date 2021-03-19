@@ -19,7 +19,6 @@ RSpec.describe Clamp::Completer do
 
   it "generates zsh autocompletion" do
     command.run(%w[complete zsh])
-    # expect(stdout).to be("render-profile")
     expect(stdout).to eq(%{#compdef rspec
 
 
